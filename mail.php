@@ -32,8 +32,7 @@ $mail->Subject = 'Заявка с тестового сайта';
 $mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
 
-if(!$mail->send()) {
-    echo 'Error';
+
 } else {
     header('location: thank-you.html');
 }
