@@ -28,7 +28,7 @@ $mail->addAddress('danil_51@mail.ua');     // Кому будет уходить
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Сообщение с WonderFul';
-$mail->Body    = '' .$name . ' оставил сообщение ' .$message. '<br>Почта этого пользователя: ' 
+$mail->Body    = '' .$name . ' оставил сообщение ' .$message. '<br>Сообщение этого пользователя: ' 
 $mail->AltBody = '';
 
 if(!$mail->send()) {
